@@ -24,7 +24,8 @@ yarn run init
 
 that will install all dependencies to run the app.
 
-**Note** : Please refer to [installation guide](https://pywebview.flowrl.com/guide/installation.html#dependencies) and make sure all dependencies are set to run `pywebview` application.
+**Note** : Please refer to [installation guide](https://pywebview.flowrl.com/guide/installation.html#dependencies)
+and make sure all dependencies are set to run `pywebview` application.
 
 ## Start the Application
 

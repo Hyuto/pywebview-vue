@@ -6,7 +6,7 @@ PyInstaller.config.CONF['distpath'] = "./publish"
 
 block_cipher = None
 
-a = Analysis(['./main.py'],
+a = Analysis(['./src/main.py'],
              pathex=['.'],
              binaries=None,
              datas=[('./dist', 'dist')],
@@ -24,9 +24,9 @@ exe = EXE(pyz,
           name='pywebview-vue-app',
           debug=False,
           strip=True,
-          #icon='./public/favicon.ico',
+          icon='./public/favicon.ico',
           upx=True,
-          console=False )
+          console=False)
 
 coll = COLLECT(exe,
                a.binaries,
