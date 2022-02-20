@@ -1,12 +1,12 @@
 import os
-import sys
 import argparse
+import sysconfig
 from pathlib import Path
 
 
 def no_cache():
     """Set no caching in Webview"""
-    wsgi = Path(os.path.join(".", "webview-env", "Lib", "site-packages", "webview", "wsgi.py"))
+    wsgi = Path(os.path.join(sysconfig.get_paths()["purelib"], "webview", "wsgi.py"))
     wsgi.write_text(wsgi.read_text().replace(r"'max-age={}'.format(self.max_age)", "'no-store'"))
 
 
