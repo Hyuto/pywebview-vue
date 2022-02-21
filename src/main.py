@@ -1,6 +1,5 @@
 import os
 import sys
-import time
 import webview
 import getpass
 
@@ -11,13 +10,6 @@ if sys.flags.dev_mode:
     MAIN_DIR = os.path.join("..", "dist")  # development
 else:
     MAIN_DIR = os.path.join(".", "dist")  # production
-
-
-def wait_template(template):
-    """Wait template on first launch at development phase"""
-    print("Waiting on template folder to be exist")
-    while not os.path.exists(template):
-        time.sleep(0.5)
 
 
 class API:
@@ -35,6 +27,13 @@ def WebViewApp():
     if sys.flags.dev_mode:
         # Please don't delete code bellow
         # Wait template on first launch
+        import time
+
+        def wait_template(template):
+            while not os.path.exists(template):
+                time.sleep(0.5)
+
+        print("Waiting on template folder to be exist")
         wait_template(template=os.path.join(os.path.dirname(__file__), "..", "dist"))
 
     api = API()

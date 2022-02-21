@@ -1,22 +1,22 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your PyWebView & Vue.js App" />
+  <Hello msg="Welcome to Your PyWebView & Vue.js App" />
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Hello from "./components/Hello.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    Hello,
   },
 };
 </script>
 
 <style>
 body {
-  margin: 0;
+  margin: 0 10px;
 }
 
 #app {
@@ -27,7 +27,7 @@ body {
   color: #2c3e50;
 
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

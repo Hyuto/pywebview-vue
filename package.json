@@ -15,7 +15,7 @@
     "build:win32": ".\\webview-env\\Scripts\\pyinstaller windows.spec",
     "build:linux": "./webview-env/bin/pyinstaller linux.spec",
     "vue-dev": "parcel watch",
-    "vue-build": "parcel build --public-url .",
+    "vue-build": "parcel build --public-url . --no-source-maps",
     "vue-serve": "parcel",
     "install-dep": "run-script-os",
     "install-dep:win32": ".\\webview-env\\Scripts\\python -m pip install",
@@ -49,6 +49,7 @@
     "concurrently": "^7.0.0",
     "parcel": "^2.3.1",
     "run-script-os": "^1.1.6",
+    "sass": "^1.49.8",
     "shx": "^0.3.4"
   },
   "dependencies": {

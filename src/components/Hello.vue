@@ -12,7 +12,7 @@
 import { ref } from "vue";
 
 export default {
-  name: "HelloWorld",
+  name: "Hello",
   props: {
     msg: String,
   },
@@ -34,12 +34,16 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
-  color: #b6c33c;
-  background-color: #2c3e50;
-  padding: 5px;
-  border-radius: 5px;
+<style lang="scss" scoped>
+p {
+  line-height: 1.5rem;
+
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+    color: #b6c33c;
+    background-color: #2c3e50;
+    padding: 5px;
+    border-radius: 5px;
+  }
 }
 </style>
