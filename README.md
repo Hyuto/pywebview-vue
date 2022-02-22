@@ -56,7 +56,17 @@ DEBUG = FALSE
 
 in `main.py` before deploying the app for production.
 
-## Build Vue
+## Vue
+
+**Serve**
+
+Run this command to start development server vue (frontend) application only.
+
+```bash
+yarn vue-serve
+```
+
+**Build**
 
 Run this command to build vue (frontend) application only.
 
@@ -65,6 +75,14 @@ yarn vue-build
 ```
 
 This will build the vue application to production on `dist` directory.
+
+**Lint**
+
+Run this command to lint your vue code.
+
+```bash
+yarn vue-lint
+```
 
 ## Install Additional Python Dependencies
 
